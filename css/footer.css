@@ -1,0 +1,28 @@
+/* footer.css */
+
+ /* pc크기 */
+ @media screen {
+  #footer>ul{position: absolute;top: 40%;left: 5%; display: flex;justify-content: space-between;flex-wrap: wrap;width: 30%;}
+#footer>ul>li>a{font-size: 0.75rem;color: #fff;}
+#footer>ul>li:nth-child(3)>a{color: #1460d8;}
+#footer>ul>li:nth-child(4){position: relative;padding-right: 2.5%; background: url(../images/footer_bottom.png) no-repeat 100% 57%;}
+#footer>ul>li:nth-child(4).on{background: url(../images/footer_top.png) no-repeat 100% 57%;}
+#footer>ul>li:nth-child(4)>ul{display: flex;flex-direction: column;justify-content: space-between;position: absolute;top: -160px;left: -50%;
+  padding: 10% 0; width: 200%;height: 140px;border:1px solid #616462;color: #fff;background: #000;border-radius: 6px;visibility: hidden;}
+#footer>ul>li:nth-child(4)>ul>li{flex: 1;}
+#footer>ul>li:nth-child(4)>ul>li>a{display: block;width: 100%;height: 100%; color: #fff;text-align: center;line-height: 300%;}
+#footer>ul>li:nth-child(4)>ul>li>a:hover{background: #313131;}
+#footer>ul>li:nth-child(4)>ul>li:last-child>a{padding-bottom: 0;}
+#footer>p{position: absolute;bottom: 25%; left: 5%; color: #4b4b4b;}
+.relatedsites{position: absolute;top: 50%;transform: translateY(-50%); right: 5%;}
+.relatedsites>a{display: block;padding-left: 25px; width: 200px;height: 40px;color: #fff;border: 1px solid #2e2e2e;line-height: 40px;
+  border-radius: 6px;background: url(../images/relatedsite_bottom.png) no-repeat 90% 50%;}
+.relatedsites.on>a{background-image: url(../images/relatedsite_top.png);}
+.relatedsites>ul{position: absolute;bottom: 41px;width: 225px;height: 450px;overflow: auto;visibility: hidden;
+  background: #121212;border: 1px solid #333;border-radius: 6px 6px 0 0;transition: height 0.2s ease-in-out 0s;}
+.relatedsites>ul::-webkit-scrollbar {width: 6px;}
+.relatedsites>ul::-webkit-scrollbar-thumb {background: #fff;border-radius: 6px;}
+.relatedsites>ul>li{padding-bottom: 20px;padding-left: 25px; color: #6d6d6d;}
+.relatedsites>ul a {display: block;padding-bottom: 5px; color: #fff;}
+.relatedsites>ul a:hover{background: #313131;}
+ }

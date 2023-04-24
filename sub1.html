@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/import.css" />
+<link rel="stylesheet" href="css/sub1.css" />
+<script defer src="js/common.js"></script>
+<title>IR | 공시정보</title>
+</head>
+<body>
+<!-- 본문 바로가기 -->
+<div id="skipNavi"><a href="#container">본문으로 바로가기</a></div>
+<!-- //본문 바로가기 -->
+<hr />
+<!-- wrap -->
+<div id="wrap">
+<!-- header -->
+<div id="header"></div>
+<!-- //header -->
+<hr />
+<!-- conttainer -->
+<div id="container">
+  <div class="spot">
+    <h2>공시정보</h2>
+    <a href="#">공시정보 관리지침</a>
+    <p class="path"><a href="main.html" class="home">홈으로</a> > <a href="#">IR</a> > <a href="#">공시정보</a></p>
+  </div>
+  <div id="content">
+    <h2 class="blind">공시정보 보고서 목록</h2>
+    <table class="publication">
+      <caption class="blind">공지정보 보고서</caption>
+        <thead>
+          <tr>
+            <th scope="col">번호</th>
+            <th scope="col">보고서명</th>
+            <th scope="col">제출인</th>
+            <th scope="col">일자</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="#">감사보고서제출</a></td>
+            <td>삼성물산</td>
+            <td>2023. 03. 03</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="#">단일판매ㆍ공급계약체결</a></td>
+            <td>삼성물산</td>
+            <td>2023. 02. 28</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="#">대규모기업집단현황공시[분기별공시(개별회사용)]</a></td>
+            <td>삼성물산</td>
+            <td>2023. 02. 27</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>단일판매ㆍ공급계약체결<a href="#"></a></td>
+            <td>삼성물산</td>
+            <td>2023. 02. 27</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="#">최대주주등소유주식변동신고서</a></td>
+            <td>삼성물산</td>
+            <td>2023. 02. 27</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="#">임원ㆍ주요주주특정증권등소유상황보고서</a></td>
+            <td>송규종</td>
+            <td>2023. 02. 21</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="#">수시공시의무관련사항(공정공시)</a></td>
+            <td>삼성물산</td>
+            <td>2023. 02. 16</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><a href="#">[기재정정]주요사항보고서(감자결정)</a></td>
+            <td>삼성물산</td>
+            <td>2023. 02. 15</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><a href="#">의결권대리행사권유참고서류</a></td>
+            <td>삼성물산</td>
+            <td>2023. 02. 15</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><a href="#">주주총회소집공고</a></td>
+            <td>삼성물산</td>
+            <td>2023. 02. 15</td>
+          </tr>
+        </tbody>
+    </table>
+    <div class="publication_list">
+      <div class="prev_publication">
+        <a href="#" class="prev_page">이전페이지</a>
+        <a href="#" class="prev_list">이전목록</a>
+      </div>
+      <ol>
+        <li class="on"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+      </ol>
+      <div class="next_publication">
+        <a href="#" class="next_list">다음목록</a>
+        <a href="#" class="next_page">다음페이지</a>
+      </div>
+    </div>
+    <ul class="movepage">
+      <li><a href="#">삼성물산 소개 ></a></li>
+      <li><a href="#">사업분야 ></a></li>
+      <li><a href="#">ESG</a></li>
+      <li><a href="#">뉴스룸</a></li>
+    </ul>
+  </div>
+</div>
+<!-- //container -->
+<hr />
+<!-- footer -->
+<div id="footer"></div>
+<!-- //footer -->
+</div>
+<!-- //wrap -->
+<script>
+  // AJAX의 최신 Fetch API 사용해서
+  // html 문서안에서 다른 html문서 불러오기
+  // 자바스크립트 비동기 방식으로 async await
+  async function fetchHtmlAsText(url) {
+    const response = await fetch(url);
+    return await response.text(); // response의 text를 밑에 넣어준다
+  }
+  
+  async function importPage(target) {
+    document.querySelector(`#${target}`).innerHTML = await fetchHtmlAsText(`${target}.html`);
+  }
+  importPage(`header`);
+  importPage(`footer`);
+  </script>
+</body>
+</html>

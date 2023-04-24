@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/sub2.css">
+    <script defer src="js/common.js"></script>
+    <title>IR | 공시정보</title>
+  </head>
+  <body>
+    <!-- 본문 바로가기 -->
+    <div id="skipNavi"><a href="#container">본문으로 바로가기</a></div>
+    <!-- //본문 바로가기 -->
+    <hr />
+    <!-- wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div id="header"></div>
+      <!-- //header -->
+      <hr />
+      <!-- conttainer -->
+      <div id="container">
+        <div class="spot">
+          <h2>CONTACT US</h2>
+          <p class="path">
+            <a href="main.html" class="home">홈으로</a> > <a href="#">Contact Us</a>
+          </p>
+        </div>
+        <div id="content">
+          <div class="q1">
+            <h3>Q1.</h3>
+            <p><span>무엇</span>에 관해 문의하고 싶으신가요?</p>
+            <ul>
+              <li class="on"><a href="#">공통문의<br /><span>IR/ESG/기타</span></a></li>
+              <li><a href="#">부분문의<br /><span>건설부문/상사부문/패션부문/리조트부문</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="q2">
+            <h3>Q2.</h3>
+            <p>원하시는 <span>상세 카테고리</span>를 선택해주세요.</p>
+            <ul>
+              <li class="on"><a href="#">IR</a></li>
+              <li><a href="#">ESG</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">건설부문↗</a></li>
+              <li><a href="#">상사부문↗</a></li>
+              <li><a href="#">패션부문↗</a></li>
+              <li><a href="#">리조트부문↗</a></li>
+            </ul>
+          </div>
+          <div class="q3">
+            <h3>Q3.</h3>
+            <p>문의하시고자 하는 <span>내용</span>을 알려주세요.</p>
+            <p><span>*</span>필수 항목입니다.</p>
+            <form>
+              <fieldset>
+                <ul>
+                  <li><label for="title">제목<span>*</span></label>
+                    <div>
+                      <input type="text" id="title" title="제목" placeholder="제목 입력" required />
+                    </div>
+                  </li>
+                  <li><label for="context">내용<span>*</span></label>
+                    <div>
+                      <textarea id="context" cols="30" rows="10" title="내용" placeholder="내용 입력" required></textarea>
+                    </div>
+                  </li>
+                  <li><label for="emailId">이메일 주소<span>*</span></label>
+                    <div>
+                      <input type="text" id="emailId" title="아이디" placeholder="아이디 입력" required /><span>@</span>
+                      <input type="text" id="emailDomain"title="도메인" placeholder="도메인 입력" required />
+                      <select id="domain" title="도메인선택">
+                        <option value="select">선택하세요</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="direct">직접입력</option>
+                    </select>
+                    </div>
+                  </li>
+                  <li><label for="preventAutomatic">자동입력 방지<span>*</span></label>
+                    <div>
+                      <input type="text" id="sentence" title="자동입력방지 문자" value="sq668" readonly />
+                      <input type="text" id="preventAutomatic" title="자동입력방지 입력" required />
+                      <button type="button">새로고침 ↻</button>
+                    </div>
+                  </li>
+                  <li>개인정보 활용동의<span>*</span>
+                    <div>
+                      <p>
+                        삼성물산은 고객님들의 의견 접수와 관련하여 성실한 답변을
+                        드리기 위해 필요한 최소한의 개인정보를 수집하고 있습니다.
+                      </p>
+                      <div class="agree">
+                        <ul>
+                          <li>수집 항목 : 이메일</li>
+                          <li>수집 및 이용목적 : 접수 문의에 대한 답변/안내</li>
+                          <li>보유 및 이용기간 : 고객문의 처리후 1년 보관</li>
+                        </ul>
+                        <p>
+                          ※문의에 대한 답변을 위해서 필요한 최소한의 개인정보
+                          이므로 동의를 해 주셔야 서비스를 이용하실 수 있습니다
+                        </p>
+                      </div>
+                      <div class="agree_check">
+                        <span>위 사항에 동의하십니까?</span>
+                      <span>
+                        <input type="radio" id="agreeY" name="agree" title="개인정보 필수항목 동의여부(Y)" value="Y" />
+                        <label for="agreeY">동의</label>
+                        <input type="radio" id="agreeN" name="agree" title="개인정보 필수항목 동의 여부(N)" value="N" />
+                        <label for="agreeN">동의하지 않음</label>
+                      </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <input type="submit" value="문의하기" id="문의하기 바로가기" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- //container -->
+      <hr />
+      <!-- footer -->
+      <div id="footer"></div>
+      <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <script>
+      // AJAX의 최신 Fetch API 사용해서
+      // html 문서안에서 다른 html문서 불러오기
+      // 자바스크립트 비동기 방식으로 async await
+      async function fetchHtmlAsText(url) {
+        const response = await fetch(url);
+        return await response.text(); // response의 text를 밑에 넣어준다
+      }
+      
+      async function importPage(target) {
+        document.querySelector(`#${target}`).innerHTML = await fetchHtmlAsText(`${target}.html`);
+      }
+      importPage(`header`);
+      importPage(`footer`);
+      </script>
+  </body>
+</html>

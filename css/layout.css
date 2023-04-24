@@ -1,0 +1,57 @@
+/* layout.css */
+
+@import url(reset.css);
+/* common.css */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+/* font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif; */
+
+body{font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif;color: #222;}
+a{text-decoration: none;color: #222;}
+a:hover{text-decoration: none;color: #222;}
+
+/* 그림자 */
+.shadow{display: block; position: absolute;left: 0;top: 0; width: 100%;height: 100%;text-indent: -9999px;overflow: hidden;}
+.shadow:after{position: absolute;top: 0;left: 0;content: "";display: block;width: 100%;height: 100%;border-radius: 12px;
+  background: linear-gradient(to top,#000 0%,rgba(0,0,0,0.3));opacity: 0.5; transition: all 0.2s linear 0s;}
+.shadow:hover:after{opacity: 0.8;}
+
+ /* pc크기 */
+ @media screen {
+  /* layout  1vw = 20px*/ 
+#wrap{width: 100%}
+#header{z-index: 20; position: relative;width: 100%;height: 150px;}
+  .header_wrap{position: fixed;width: 100%;height: 150px;min-width: 1025px; transition: all 0.2s ease-in-out 0s;background: #fff;}
+  .header_wrap.active{height: 120px;}
+  .header_wrap.on{visibility: hidden;height: 0;overflow: hidden;}
+    .businessfield{position: relative; display: flex;justify-content: space-between;margin: 0 auto;width: 91%;min-width: 1025px;height: 50px;
+      font-size: 12px;background: #1428a0;border-radius: 0 0 6px 6px;transition: width 0.1s ease-in-out 0s;}
+    .businessfield.on{width: 100%;}
+    .header_wrap.active .businessfield{width: 100%}
+    .header_inner{display: flex;justify-content: space-between;margin: 0 auto;width: 91%;height: 100px; transition: width 0.1s ease-in-out 0s;}
+    .header_wrap.active .header_inner{height: 70px;}
+    .btn_tabMeun,.tabMenu{display: none;}
+    .keyinfo{z-index: 10;position: fixed;top: 0;left: 0;width: 100vw;height: 100vh;background: rgba(77,76,76,0.5);visibility: hidden;overflow: hidden;
+      transition: all 0.4s ease-in-out 0.3s;}
+    .keyinfo.on{z-index: 40; visibility: visible;}
+    .srchbox{z-index: 10; visibility: hidden;position: fixed;top: 15.5%;left: 0;width: 100vw;min-width: 1313px;height: 100%;min-height: 248px;background: rgba(77,76,76,0.5);overflow: hidden;
+      transition: all 0.4s ease 0.2s;}
+    .srchbox.on{visibility: visible;}
+#footer{position: relative;margin-top: 80px;width: 100%;height: 174px;background: #121212;}
+
+ }
+
+  /* font-size 변경 */
+  @media screen and (min-width:1025px) and (max-width:1444px){
+    html{font-size: 12px;}
+  }
+
+  /* tablet 크기 */
+  @media screen and (min-width:769px) and (max-width:1024px){
+    html{font-size: 9px;}
+   }
+
+    /* mobile 크기 */
+    @media screen and (max-width:768px){
+      html{font-size: 7px;}
+    }
