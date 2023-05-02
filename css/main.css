@@ -147,10 +147,14 @@
               .card_front>span:first-child{position: absolute;bottom: 25%;left: 5%; font-size: 1.0625rem;font-weight: 600;}
               .card_front>p{position: absolute;bottom: 8%;left: 4.4%;font-size: 1.5625rem;font-weight: 900;}
               .card_front>span:last-child{position: absolute;bottom: 3%;left: 4.5%;color: #b7b7b7;}
-              .card_back{position: absolute;top: 0;width: 100%; height: 100%;border-radius: 12px;background: #1c9c9e;
-                transition: all 1s ease 0s;
+              .card_back{position: absolute;top: 0;display: flex;flex-direction: column;align-items: center;padding-top: 10px;width: 100%; height: 100%;border-radius: 12px;background: #1c9c9e;
+                transition: all 1s ease 0s;overflow: hidden;
               transform: rotateY(180deg);backface-visibility:hidden;}
             .newsroom_cards>li:hover .card_back{transform: rotateY(0); visibility: visible;}
+              .news_title{padding-bottom: 30px; font-size: 25px;font-weight: 600;text-align: center;}
+              .news_content{padding-bottom: 30px; font-size: 15px;text-align: center}
+              .news_move{padding: 10px 20px;color: #fff;border: 1px solid #fff;box-sizing: border-box;border-radius: 6px;transition: all 0.2s linear 0s;}
+              .news_move:hover{color: #1c9c9e;background-color: #fff;}
 
        /* content4 */
        .content4>p{position: absolute;bottom: -4%;right:0;color: #8c8a88;width: 280px;}
@@ -344,9 +348,13 @@
               .card_front>span:first-child{position: absolute;bottom: 25%;left: 5%; font-size: 1.0625rem;font-weight: 600;}
               .card_front>p{position: absolute;bottom: 8%;left: 4.4%;font-size: 1.5625rem;font-weight: 900;}
               .card_front>span:last-child{position: absolute;bottom: 3%;left: 4.5%;color: #b7b7b7;}
-              .card_back{position: absolute;top: 0;width: 100%; height: 100%;border-radius: 12px;background: #1c9c9e;
+              .card_back{position: absolute;top: 0;display: flex;flex-direction: column;align-items: center;padding-top: 20px;width: 100%;height: 100%;border-radius: 12px;background: #1c9c9e;
                 transition: all 1s ease 0s;transform: rotateY(180deg);backface-visibility:hidden;}
             .newsroom_cards>li:hover .card_back{transform: rotateY(0); visibility: visible;}
+              .news_title{padding-bottom: 30px;font-size: 15px;font-weight: 600;text-align: center;}
+              .news_content{display: none;}
+              .news_move{padding: 10px 50px;color: #fff;border: 1px solid #fff;box-sizing: border-box;border-radius: 6px;transition: all 0.2s linear 0s;}
+              .news_move:hover{color: #1c9c9e;background-color: #fff;}
 
        /* content4 */
        .content4>p{position: absolute;bottom: -4%;right:-12.5%;color: #8c8a88;width: 280px;}
@@ -538,9 +546,13 @@
               .card_front>span:first-child{position: absolute;bottom: 25%;left: 5%; font-size: 1.0625rem;font-weight: 600;}
               .card_front>p{position: absolute;bottom: 8%;left: 4.4%;font-size: 1.5625rem;font-weight: 900;}
               .card_front>span:last-child{position: absolute;bottom: 3%;left: 4.5%;color: #b7b7b7;}
-              .card_back{position: absolute;top: 0;width: 100%; height: 100%;border-radius: 12px;background: #1c9c9e;
+              .card_back{position: absolute;top: 0;display: flex;flex-direction: column;align-items: center;padding-top: 10px; width: 100%;height: 100%;border-radius: 12px;background: #1c9c9e;
                 transition: all 1s ease 0s;transform: rotateY(180deg);backface-visibility:hidden;overflow: hidden;}
             .newsroom_cards>li:hover .card_back{transform: rotateY(0); visibility: visible;}
+              .news_title{padding-bottom: 30px;font-size: 13px;font-weight: 600;text-align: center;}
+              .news_content{display: none;}
+              .news_move{padding: 10px 20px;color: #fff;border: 1px solid #fff;box-sizing: border-box;border-radius: 6px;transition: all 0.2s linear 0s;}
+              .news_move:hover{color: #1c9c9e;background-color: #fff;}
 
         /* content4 */
         .content4>p{position: absolute;bottom: -3%;right:-16.5%;color: #8c8a88;width: 280px;}

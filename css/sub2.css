@@ -1,7 +1,7 @@
 /* sub2 */
 /* pc */
 @media screen and (min-width:1025px){
-#container{width: 91%;}
+#container{width: 91%;margin: 0 auto;}
 /* spot */
 .spot{position: relative;width: 65%;margin: 0 auto;}
   .spot>h2{margin-bottom: 8%;padding-top: 78px; font-size: 60px;font-weight: 900;text-align: center;}
